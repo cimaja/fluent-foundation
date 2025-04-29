@@ -1,0 +1,51 @@
+/* Fluent 2 Design System Theme */
+:root {
+    /* Colors */
+    --fluent-theme-primary: #0078D4;
+    --fluent-theme-secondary: #005A9E;
+    --fluent-theme-tertiary: #2B88D8;
+    --fluent-theme-background: #FFFFFF;
+    --fluent-theme-text: #000000;
+    
+    /* Typography */
+    --fluent-font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+    --fluent-font-size: 14px;
+    --fluent-line-height: 20px;
+    
+    /* Spacing */
+    --fluent-spacing-unit: 4px;
+}
+
+body {
+    font-family: var(--fluent-font-family);
+    font-size: var(--fluent-font-size);
+    line-height: var(--fluent-line-height);
+    color: var(--fluent-theme-text);
+    background-color: var(--fluent-theme-background);
+    margin: 0;
+    padding: 0;
+}
+
+/* Button styles using Fluent design */
+.fluent-button {
+    background-color: var(--fluent-theme-primary);
+    color: white;
+    border: none;
+    padding: calc(var(--fluent-spacing-unit) * 2) calc(var(--fluent-spacing-unit) * 4);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.fluent-button:hover {
+    background-color: var(--fluent-theme-secondary);
+}
+
+/* Card component */
+.fluent-card {
+    background-color: var(--fluent-theme-background);
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: calc(var(--fluent-spacing-unit) * 3);
+    margin: calc(var(--fluent-spacing-unit) * 3) 0;
+}
